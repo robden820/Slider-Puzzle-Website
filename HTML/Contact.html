@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html land="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment About Us page</title>
+        <link rel="stylesheet" href="../CSS/Assignment.css">  
+        <!--- Link JavaScript here --->
+    </head>
+    
+    <body>
+        <div id="wrapper">
+            <header>
+                <button name="to_top" id="to_top">Return to Top</button>
+                <br>
+                <h1>Puzzle Party<img src="../Images/Logo_small.jpg"></h1>
+                <h2>Contact Us</h2>
+            </header>
+        
+            <nav>
+                <ul>
+                    <li><a href="Homepage.html">Home</a></li>
+                    <li><a href="News.html">News</a></li>
+                    <div class="dropdown">
+                        <li><a href="Puzzle.html">Puzzles</a></li>
+                        <div class="dropdown-content">
+                            <li><a href="Puzzle_game.html">Our Game</a></li>
+                            <br>
+                            <li><a href="Puzzle_recommend.html">Recommendations</a></li>
+                        </div>
+                    </div>
+                    <li><a href="About_us.html">About Us</a></li>
+                    <li><a href="Accessibilty.html">Accessibility</a></li>
+                </ul>
+            </nav>
+        
+            <aside>
+                <p><a href="About_us.html">Back...</a></p>
+            </aside>
+        
+            <main>
+                <form name="myform" 
+                      action="http://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.pl"
+                      method=get>
+                    <input type="hidden" name="recipient" value="rtdennison1@sheffield.ac.uk">
+                    <input type="hidden" name="subject" value="Feedback submission" />
+                    <label for="myemail">Your e-mail:</label> 
+                    <input type="email" name="myemail" id="myemail" placeholder="Type your email..." 
+                           maxlength="40" size="20"required>
+                    <br>
+                    <textarea name="comments" rows="5" cols="50" 
+                              placeholder="Add your comments here" ></textarea>
+                    <br>
+                    <input type="submit" value="Enter my information">
+                </form>
+            </main>
+        
+            <footer>
+                <p>Author: Robert Dennison</p>
+            </footer>
+        </div>
+        <script src="../JavaScript/scroll_top.js"></script>
+    </body>
+
+</html>
